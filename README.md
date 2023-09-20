@@ -2,7 +2,7 @@
 
 ## Description
 
-A personal discord bot made with (Scratch For Discord)[https://scratch-for-discord.com/].
+A personal discord bot made with [Scratch For Discord](https://scratch-for-discord.com/).
 
 ## License
 
