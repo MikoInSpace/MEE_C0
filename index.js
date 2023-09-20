@@ -17,7 +17,9 @@
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
     // block imports
+    const os = require("os-utils");
     let https = require("https")
+    const miliConverter = require("millisecond-converter")
     const synchronizeSlashCommands = require('@frostzzone/discord-sync-commands');
     
     // define s4d components (pretty sure 90% of these arnt even used/required)
@@ -94,6 +96,13 @@
             }
         });
     
+    const http = require('http');
+    const server = http.createServer((req, res) => {
+        res.writeHead(200);
+        res.end('This site was created to keep bot on 25/8');
+    });
+    server.listen(3000);
+    
     s4d.client.on('interactionCreate', async (interaction) => {
               if ((interaction.commandName) == 'ping') {
         await interaction.reply({ content: 'Yo', ephemeral: false, components: [] });
@@ -105,6 +114,15 @@
                     console.log('ran')
                 }
             }
+      if ((interaction.commandName) == 'website') {
+        await interaction.reply({ content: 'https://mikoinspace.github.io/MikoInSpace/', ephemeral: false, components: [] });
+      }
+      if ((interaction.commandName) == 'alterrawebsite') {
+        await interaction.reply({ content: 'https://alterralaboratories.github.io/Website/', ephemeral: false, components: [] });
+      }
+      if ((interaction.commandName) == 'uptime') {
+        await interaction.reply({ content: (miliConverter.secsMinsHoursDays((os.sysUptime() * 1000), "string")), ephemeral: false, components: [] });
+      }
     
         });
     
@@ -115,18 +133,29 @@
       		options: [
     
           ]
+      },{
+          name: 'website',
+      		description: 'Shows my personal website.',
+      		options: [
+    
+          ]
+      },{
+          name: 'alterrawebsite',
+      		description: 'Shows the Alterra website.',
+      		options: [
+    
+          ]
+      },{
+          name: 'uptime',
+      		description: 'Shows uptime of the bot.',
+      		options: [
+    
+          ]
       },
     ],{
         debug: false,
     
     });
-    
-    const http = require('http');
-    const server = http.createServer((req, res) => {
-        res.writeHead(200);
-        res.end('This site was created to keep bot on 25/8');
-    });
-    server.listen(3000);
     
     return s4d
 })();

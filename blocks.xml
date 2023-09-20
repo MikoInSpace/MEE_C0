@@ -10,6 +10,13 @@
       </block>
     </value>
   </block>
+  <block type="frost_webserver" id="3dJQn;-]h[([)2FFnKwr" x="-3" y="-158">
+    <value name="URL">
+      <shadow type="text" id="*L*q8o/k)r%(d/%t3%ml">
+        <field name="TEXT">This site was created to keep bot on 25/8</field>
+      </shadow>
+    </value>
+  </block>
   <block type="on_slash" id="Fii_EN:p2y5WZ:h7_i-E" x="-246" y="-73">
     <statement name="STATEMENTS">
       <block type="controls_if" id="%|pi`DcO+4)rDjuoC~aW">
@@ -58,6 +65,99 @@
             </next>
           </block>
         </statement>
+        <next>
+          <block type="controls_if" id="GpQe0Fzu=(:rUx0X*@H`">
+            <value name="IF0">
+              <block type="logic_compare" id="|t}u02XpR4;@9O`5pNFs">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="interaction_name" id="Wcfh]]O@7ZQTCdJJOO,J"></block>
+                </value>
+                <value name="B">
+                  <block type="jg_text_remake_paragraph_quotes" id="4~^jv:3cMIEQJDUy~Ex-">
+                    <field name="TEXT">website</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="slash_reply" id=")2Z49@Qnb_(Z6T3SB|AB">
+                <value name="CONTENT">
+                  <block type="jg_text_remake_paragraph_quotes" id="eIvU_OGlujCdiA.P.H(V">
+                    <field name="TEXT">https://mikoinspace.github.io/MikoInSpace/</field>
+                  </block>
+                </value>
+                <value name="BOOLEAN">
+                  <block type="logic_boolean" id="oKQ%4sxn.baNfOF2b*0k">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="eBPzG5{Ije|gIP]K+@o[">
+                <value name="IF0">
+                  <block type="logic_compare" id="4EZI]|wIR)^7V$ab=bcx">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="interaction_name" id=".AHUDIT_B9DZ}fb2jay]"></block>
+                    </value>
+                    <value name="B">
+                      <block type="jg_text_remake_paragraph_quotes" id="3x,e2FjHNvojs+6lw=eg">
+                        <field name="TEXT">alterrawebsite</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="slash_reply" id="5{:U4{W6pd4C`Bi04*Y$">
+                    <value name="CONTENT">
+                      <block type="jg_text_remake_paragraph_quotes" id="[m[Bf74jAyA{l}xuz-ps">
+                        <field name="TEXT">https://alterralaboratories.github.io/Website/</field>
+                      </block>
+                    </value>
+                    <value name="BOOLEAN">
+                      <block type="logic_boolean" id="~)am(r}=qO9Q}w;@9txi">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="r7TgmhZUMQ56!Tj$he~;">
+                    <value name="IF0">
+                      <block type="logic_compare" id="9WzN-cT4vF|k~1iM5a}:">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="interaction_name" id="!p$1^?Kwy?2-kZLiIzjh"></block>
+                        </value>
+                        <value name="B">
+                          <block type="jg_text_remake_paragraph_quotes" id="UZ$GT~sLI9R;$0Cy8TH(">
+                            <field name="TEXT">uptime</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="slash_reply" id="mFI}:(^R7nMbA;=kY76j">
+                        <value name="CONTENT">
+                          <block type="ps_os_stats" id="Y93/=[E#$=Ba%]6,uRxY">
+                            <field name="INFO">sysUptime</field>
+                          </block>
+                        </value>
+                        <value name="BOOLEAN">
+                          <block type="logic_boolean" id="=TSqK__3,`Yp^)!HW]6_">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
@@ -74,14 +174,49 @@
             <field name="TEXT">Pings the bot to see if it is online.</field>
           </shadow>
         </value>
+        <next>
+          <block type="frost_slash_command" id="([M,zW%Re%H[5TCO%?Z0">
+            <value name="NAME">
+              <shadow type="text" id="Y@AVgZIl1dq;rO)o=q_i">
+                <field name="TEXT">website</field>
+              </shadow>
+            </value>
+            <value name="DESC">
+              <shadow type="text" id="3VOGD|Kq1E[UTi_wMmkX">
+                <field name="TEXT">Shows my personal website.</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="frost_slash_command" id="2XG.NmUD=,G8FA7i6_x0">
+                <value name="NAME">
+                  <shadow type="text" id="7V[UP@-tByr6E4e_mDYB">
+                    <field name="TEXT">alterrawebsite</field>
+                  </shadow>
+                </value>
+                <value name="DESC">
+                  <shadow type="text" id="G!EVn+I40Efx3_qx#top">
+                    <field name="TEXT">Shows the Alterra website.</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="frost_slash_command" id="9+PV+1S3gb95FFEElG}3">
+                    <value name="NAME">
+                      <shadow type="text" id="pt3/+XQ}a}A38f5D6EpS">
+                        <field name="TEXT">uptime</field>
+                      </shadow>
+                    </value>
+                    <value name="DESC">
+                      <shadow type="text" id="mj2mUnORf%Kesns@ELLK">
+                        <field name="TEXT">Shows uptime of the bot.</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </statement>
-  </block>
-  <block type="frost_webserver" id="3dJQn;-]h[([)2FFnKwr" x="0" y="0">
-    <value name="URL">
-      <shadow type="text" id="*L*q8o/k)r%(d/%t3%ml">
-        <field name="TEXT">This site was created to keep bot on 25/8</field>
-      </shadow>
-    </value>
   </block>
 </xml>
