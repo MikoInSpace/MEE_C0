@@ -1,0 +1,87 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_login" id=")O7+PL3eS1Br}h;?X9N$" x="-734" y="-289">
+    <value name="TOKEN">
+      <block type="frost_env" id="v_L~;}8L~y,h-.)ZW7Ec">
+        <value name="VALUE">
+          <shadow type="text" id="D%_!Rn%+:I(xYeTY5M?:">
+            <field name="TEXT">TOKEN</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="on_slash" id="Fii_EN:p2y5WZ:h7_i-E" x="-246" y="-73">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="%|pi`DcO+4)rDjuoC~aW">
+        <value name="IF0">
+          <block type="logic_compare" id="Q%UFWL+~7.u;AD!,RokA">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="interaction_name" id="o*S;]M:SL;(`rz-,2^Uc"></block>
+            </value>
+            <value name="B">
+              <block type="jg_text_remake_paragraph_quotes" id="~%tsGOLS06ow1~6POa}b">
+                <field name="TEXT">ping</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="slash_reply" id="gGtnUq%?o]o.GUG[B/ng">
+            <value name="CONTENT">
+              <block type="jg_text_remake_paragraph_quotes" id="f35$~wJ}z!J7K]P768*4">
+                <field name="TEXT">Yo</field>
+              </block>
+            </value>
+            <value name="BOOLEAN">
+              <block type="logic_boolean" id=";v7:S3XJqtCrT-Rc*,7-">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="s4d_forever" id="{OkNZx|%Gc]wNhExuhwv">
+                <statement name="STATEMENT">
+                  <block type="jg_typingChannel" id="*Lcc1.3CBF!w.r^LNlA`">
+                    <value name="CHANNEL">
+                      <block type="s4d_get_channel" id="]?=|eub*%VW$aM2aT{OJ">
+                        <field name="SEARCH_TYPE">ID</field>
+                        <value name="VALUE">
+                          <block type="jg_text_remake_paragraph_quotes" id=".s+qz(XdKpT@.99p.$`;">
+                            <field name="TEXT">1143923218734919846</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="frost_slash_register" id="3d}N.44m~i_(;d~+{Dw^" x="-1408" y="20">
+    <statement name="OPTIONS">
+      <block type="frost_slash_command" id="U4Y3(YYQFF`1*!)_I@,e">
+        <value name="NAME">
+          <shadow type="text" id="PsYIplC,l[!Znm_x?MK@">
+            <field name="TEXT">ping</field>
+          </shadow>
+        </value>
+        <value name="DESC">
+          <shadow type="text" id=")6B!K:-LjaSEI.-2M`-P">
+            <field name="TEXT">Pings the bot to see if it is online.</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="frost_webserver" id="3dJQn;-]h[([)2FFnKwr" x="0" y="0">
+    <value name="URL">
+      <shadow type="text" id="*L*q8o/k)r%(d/%t3%ml">
+        <field name="TEXT">This site was created to keep bot on 25/8</field>
+      </shadow>
+    </value>
+  </block>
+</xml>
