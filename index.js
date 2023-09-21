@@ -109,8 +109,10 @@
     
                 while(s4d.client && s4d.client.token) {
                     await delay(50);
-                      s4d.client.user.setPresence({status: "online",activities:[{name:'How to make bot tutorial',type:"WATCHING"}]});
-          s4d.client.channels.cache.get('1143923218734919846').sendTyping();
+                      s4d.client.user.setActivity('Working at Alterra', {
+                   type: "STREAMING",
+                    url: 'https://alterralaboratories.github.io/Website/'});
+                    s4d.client.channels.cache.get('1143923218734919846').sendTyping();
               await delay(Number(8)*1000);
     
                     console.log('ran')

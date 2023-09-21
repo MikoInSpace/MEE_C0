@@ -48,12 +48,15 @@
             <next>
               <block type="s4d_forever" id="{OkNZx|%Gc]wNhExuhwv">
                 <statement name="STATEMENT">
-                  <block type="s4d_set_bot_game" id="{PzI6@w{-;k7}5%[sn#)">
-                    <field name="OIFD">online</field>
-                    <field name="TYPE">WATCHING</field>
-                    <value name="GAME">
-                      <block type="jg_text_remake_paragraph_quotes" id=")9i{^-h4tujyiMq7E-{;">
-                        <field name="TEXT">How to make bot tutorial</field>
+                  <block type="s4d_set_bot_stream_text" id="dXnYi3p15P@P$bmIco7r">
+                    <value name="NAME">
+                      <block type="jg_text_remake_paragraph_quotes" id=";jxQd~3otb3j7pwHo(3}">
+                        <field name="TEXT">Working at Alterra</field>
+                      </block>
+                    </value>
+                    <value name="URL">
+                      <block type="jg_text_remake_paragraph_quotes" id="^5(La|yrj]Y#75RxmH6,">
+                        <field name="TEXT">https://alterralaboratories.github.io/Website/</field>
                       </block>
                     </value>
                     <next>
