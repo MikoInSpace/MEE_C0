@@ -109,8 +109,9 @@
     
                 while(s4d.client && s4d.client.token) {
                     await delay(50);
-                      s4d.client.user.setPresence({status: "online",activities:[{name:'Visual Studio Code',type:"PLAYING"}]});
+                      s4d.client.user.setPresence({status: "online",activities:[{name:'How to make bot tutorial',type:"WATCHING"}]});
           s4d.client.channels.cache.get('1143923218734919846').sendTyping();
+              await delay(Number(8)*1000);
     
                     console.log('ran')
                 }
@@ -125,7 +126,7 @@
         await interaction.reply({ content: (miliConverter.secsMinsHoursDays((os.sysUptime() * 1000), "string")), ephemeral: false, components: [] });
       }
       if ((interaction.commandName) == 'setup') {
-        await interaction.reply({ content: No content, ephemeral: false , components: [] });
+        await interaction.reply({ content: 'https://mikoinspace.github.io/MikoInSpace/setup.html', ephemeral: false, components: [] });
       }
     
         });

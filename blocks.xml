@@ -50,10 +50,10 @@
                 <statement name="STATEMENT">
                   <block type="s4d_set_bot_game" id="{PzI6@w{-;k7}5%[sn#)">
                     <field name="OIFD">online</field>
-                    <field name="TYPE">PLAYING</field>
+                    <field name="TYPE">WATCHING</field>
                     <value name="GAME">
                       <block type="jg_text_remake_paragraph_quotes" id=")9i{^-h4tujyiMq7E-{;">
-                        <field name="TEXT">Visual Studio Code</field>
+                        <field name="TEXT">How to make bot tutorial</field>
                       </block>
                     </value>
                     <next>
@@ -68,6 +68,15 @@
                             </value>
                           </block>
                         </value>
+                        <next>
+                          <block type="s4d_wait_seconds" id="#Y*;[O]dbQDiD0]5wi`G">
+                            <value name="TIME">
+                              <shadow type="math_number" id="%~?cE[iQjht1K_mmUo4d">
+                                <field name="NUM">8</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
@@ -180,6 +189,11 @@
                         </value>
                         <statement name="DO0">
                           <block type="slash_reply" id="QfS2CR+1F)Jh]l*Eb()c">
+                            <value name="CONTENT">
+                              <block type="jg_text_remake_paragraph_quotes" id=".yA)KXFdyWgLZlyr@yRT">
+                                <field name="TEXT">https://mikoinspace.github.io/MikoInSpace/setup.html</field>
+                              </block>
+                            </value>
                             <value name="BOOLEAN">
                               <block type="logic_boolean" id="?Waivl`XxREHG%(GZoVc">
                                 <field name="BOOL">FALSE</field>
@@ -269,23 +283,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="lists_create_with" id="~^[|vguwaBBW`bc2l-?)" disabled="true" x="516" y="1022">
-    <mutation items="3"></mutation>
-    <value name="ADD0">
-      <block type="jg_text_remake_paragraph_quotes" id=".yA)KXFdyWgLZlyr@yRT">
-        <field name="TEXT">CPU: Intel I5-10400F</field>
-      </block>
-    </value>
-    <value name="ADD1">
-      <block type="jg_text_remake_paragraph_quotes" id="++|?x~}%b#urS?%LBVYw">
-        <field name="TEXT">GPU: Gigabyte NVIDIA GeForce RTX 3060 Gaming OC</field>
-      </block>
-    </value>
-    <value name="ADD2">
-      <block type="jg_text_remake_paragraph_quotes" id="!F,HaIzZQp}3)3F#1:SE">
-        <field name="TEXT">RAM: 32GB Corsair Vengeance</field>
-      </block>
-    </value>
   </block>
 </xml>
