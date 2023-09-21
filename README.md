@@ -10,7 +10,7 @@ A personal discord bot made with [Scratch For Discord](https://scratch-for-disco
 
 2. Run `cd MEE_C0` to go into the project directory.
 
-3. Run 'npm install' and 'npm start' in a terminal.
+3. Run `npm install` and `npm start` in a terminal.
 **Make sure you have set your bots token beforehand.**
 
 4. Your bot is up and runnning!
