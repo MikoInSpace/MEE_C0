@@ -37,28 +37,39 @@
           <block type="slash_reply" id="gGtnUq%?o]o.GUG[B/ng">
             <value name="CONTENT">
               <block type="jg_text_remake_paragraph_quotes" id="f35$~wJ}z!J7K]P768*4">
-                <field name="TEXT">Yo</field>
+                <field name="TEXT">I like cheesecake</field>
               </block>
             </value>
             <value name="BOOLEAN">
               <block type="logic_boolean" id=";v7:S3XJqtCrT-Rc*,7-">
-                <field name="BOOL">FALSE</field>
+                <field name="BOOL">TRUE</field>
               </block>
             </value>
             <next>
               <block type="s4d_forever" id="{OkNZx|%Gc]wNhExuhwv">
                 <statement name="STATEMENT">
-                  <block type="jg_typingChannel" id="*Lcc1.3CBF!w.r^LNlA`">
-                    <value name="CHANNEL">
-                      <block type="s4d_get_channel" id="]?=|eub*%VW$aM2aT{OJ">
-                        <field name="SEARCH_TYPE">ID</field>
-                        <value name="VALUE">
-                          <block type="jg_text_remake_paragraph_quotes" id=".s+qz(XdKpT@.99p.$`;">
-                            <field name="TEXT">1143923218734919846</field>
+                  <block type="s4d_set_bot_game" id="{PzI6@w{-;k7}5%[sn#)">
+                    <field name="OIFD">online</field>
+                    <field name="TYPE">PLAYING</field>
+                    <value name="GAME">
+                      <block type="jg_text_remake_paragraph_quotes" id=")9i{^-h4tujyiMq7E-{;">
+                        <field name="TEXT">Visual Studio Code</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="jg_typingChannel" id="*Lcc1.3CBF!w.r^LNlA`">
+                        <value name="CHANNEL">
+                          <block type="s4d_get_channel" id="]?=|eub*%VW$aM2aT{OJ">
+                            <field name="SEARCH_TYPE">ID</field>
+                            <value name="VALUE">
+                              <block type="jg_text_remake_paragraph_quotes" id=".s+qz(XdKpT@.99p.$`;">
+                                <field name="TEXT">1143923218734919846</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
                       </block>
-                    </value>
+                    </next>
                   </block>
                 </statement>
               </block>
@@ -152,6 +163,32 @@
                         </value>
                       </block>
                     </statement>
+                    <next>
+                      <block type="controls_if" id="7on=]C:JW4h8+#S`{n8C">
+                        <value name="IF0">
+                          <block type="logic_compare" id="C:iv:+a8V1+ke6B-g!Z8">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="interaction_name" id="m#cdv~DT!$tSSZ)B]i[d"></block>
+                            </value>
+                            <value name="B">
+                              <block type="jg_text_remake_paragraph_quotes" id="a!Qz*;g8Pk_}Cx5xd|)0">
+                                <field name="TEXT">setup</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="slash_reply" id="QfS2CR+1F)Jh]l*Eb()c">
+                            <value name="BOOLEAN">
+                              <block type="logic_boolean" id="?Waivl`XxREHG%(GZoVc">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -210,6 +247,20 @@
                         <field name="TEXT">Shows uptime of the bot.</field>
                       </shadow>
                     </value>
+                    <next>
+                      <block type="frost_slash_command" id="cu9mkRbs#z50knshg~B@">
+                        <value name="NAME">
+                          <shadow type="text" id="6]cqvrMgH4=4EiVW#1a#">
+                            <field name="TEXT">setup</field>
+                          </shadow>
+                        </value>
+                        <value name="DESC">
+                          <shadow type="text" id="]b%:.Ve4x=?~Jft@+e8T">
+                            <field name="TEXT">Shows my setup specs.</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -218,5 +269,23 @@
         </next>
       </block>
     </statement>
+  </block>
+  <block type="lists_create_with" id="~^[|vguwaBBW`bc2l-?)" disabled="true" x="516" y="1022">
+    <mutation items="3"></mutation>
+    <value name="ADD0">
+      <block type="jg_text_remake_paragraph_quotes" id=".yA)KXFdyWgLZlyr@yRT">
+        <field name="TEXT">CPU: Intel I5-10400F</field>
+      </block>
+    </value>
+    <value name="ADD1">
+      <block type="jg_text_remake_paragraph_quotes" id="++|?x~}%b#urS?%LBVYw">
+        <field name="TEXT">GPU: Gigabyte NVIDIA GeForce RTX 3060 Gaming OC</field>
+      </block>
+    </value>
+    <value name="ADD2">
+      <block type="jg_text_remake_paragraph_quotes" id="!F,HaIzZQp}3)3F#1:SE">
+        <field name="TEXT">RAM: 32GB Corsair Vengeance</field>
+      </block>
+    </value>
   </block>
 </xml>

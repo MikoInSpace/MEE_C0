@@ -105,11 +105,12 @@
     
     s4d.client.on('interactionCreate', async (interaction) => {
               if ((interaction.commandName) == 'ping') {
-        await interaction.reply({ content: 'Yo', ephemeral: false, components: [] });
+        await interaction.reply({ content: 'I like cheesecake', ephemeral: true, components: [] });
     
                 while(s4d.client && s4d.client.token) {
                     await delay(50);
-                      s4d.client.channels.cache.get('1143923218734919846').sendTyping();
+                      s4d.client.user.setPresence({status: "online",activities:[{name:'Visual Studio Code',type:"PLAYING"}]});
+          s4d.client.channels.cache.get('1143923218734919846').sendTyping();
     
                     console.log('ran')
                 }
@@ -122,6 +123,9 @@
       }
       if ((interaction.commandName) == 'uptime') {
         await interaction.reply({ content: (miliConverter.secsMinsHoursDays((os.sysUptime() * 1000), "string")), ephemeral: false, components: [] });
+      }
+      if ((interaction.commandName) == 'setup') {
+        await interaction.reply({ content: No content, ephemeral: false , components: [] });
       }
     
         });
@@ -148,6 +152,12 @@
       },{
           name: 'uptime',
       		description: 'Shows uptime of the bot.',
+      		options: [
+    
+          ]
+      },{
+          name: 'setup',
+      		description: 'Shows my setup specs.',
       		options: [
     
           ]
