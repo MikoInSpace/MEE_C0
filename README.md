@@ -4,6 +4,14 @@
 
 A personal discord bot made with [Scratch For Discord](https://scratch-for-discord.com/) and hosted on [Replit](https://replit.com/).
 
+## Commands
+
+/ping           | Pings the bot and makes it change its status. It will also type in a preset channel that shows if its online.
+/alterrawebsite | Gives the link to the Alterra Website.
+/setup          | Gives the link to the setup page on my setup.
+/uptime         | Shows the uptime of the server the bot is hosted on.
+/website        | Shows the link to my personal Website.
+
 ## How to use
 
 1. Run `git clone https://github.com/MikoInSpace/MEE_C0.git` to clone the repository.
