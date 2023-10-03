@@ -2,7 +2,7 @@
 
 ## Description
 
-A personal discord bot made with [Scratch For Discord](https://scratch-for-discord.com/) and hosted on [Replit](https://replit.com/).
+A personal discord bot made with [Scratch For Discord](https://s4d.discodes.xyz/) and hosted on [Replit](https://replit.com/).
 
 ## Commands
 
